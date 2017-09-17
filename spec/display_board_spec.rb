@@ -178,7 +178,7 @@ describe "#display_board in 'lib/display_board.rb" do
     it 'prints an entire board full of Os' do
       # Can you copy the syntax of the tests above to write a test for a board
       # entirely filled with Os?
-      board = ["O", "O", "O", "O", "O", "O", "O", "O", "O"] 
+      board = ["O", "O", "O", "O", "O", "O", "O", "O", "O"]
 
       output = capture_puts{ display_board(board) } if defined?(display_board)
       rows = output.split("\n")
@@ -189,7 +189,7 @@ describe "#display_board in 'lib/display_board.rb" do
       expect(rows[3]).to eq("-----------")
       expect(rows[4]).to eq(" O | O | O ")
 
-      
+
 
 
       # Hint: You should be able to copy the code in the previous it example
